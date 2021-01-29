@@ -65,4 +65,10 @@ public class Facture {
 		return client;
 	}
 	
+	public List<LigneFacture> getLignesFacture() {
+		return lignesFacture;
+	}
+	public void setLignesFacture(List<LigneFacture> lignesFacture) {
+		this.lignesFacture = lignesFacture;
+	}
 }

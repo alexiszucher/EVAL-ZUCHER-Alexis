@@ -38,4 +38,9 @@ public class FactureServiceImpl implements FactureService {
 		return dao.get();	
 	}
 
+	public Facture get(Long id) {
+		FactureDAO dao=new FactureDAOImpl(em, utx);
+		return dao.get(id);	
+	}
+
 }

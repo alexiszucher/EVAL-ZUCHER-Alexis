@@ -10,5 +10,7 @@ public interface FactureService {
 	
 	//Récupère la liste de toutes les factures de la base de données
 	List<Facture> get();
+	
+	Facture get(Long id);
 
 }

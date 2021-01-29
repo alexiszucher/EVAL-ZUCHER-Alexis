@@ -62,4 +62,14 @@
 	   <url-pattern>/ajouter/article</url-pattern>
 	</servlet-mapping>
 	
+	<servlet>
+	  <servlet-name>DetailFactureServlet</servlet-name>
+	  <servlet-class>fr.epsi.controller.DetailFactureServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	   <servlet-name>DetailFactureServlet</servlet-name>
+	   <url-pattern>/detailFacture</url-pattern>
+	</servlet-mapping>
+	
 </web-app>

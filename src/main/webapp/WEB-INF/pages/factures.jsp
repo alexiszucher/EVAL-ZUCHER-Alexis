@@ -19,6 +19,7 @@
 		            <th>date</th>
 		            <th>client</th>
 		            <th>prix</th>
+		            <th>Détail</th>
 	          </tr>
         </thead>
 
@@ -29,6 +30,7 @@
 		          	<td><c:out value="${ facture.date }"></c:out></td>
 		          	<td><c:out value="${ facture.client.nom }"></c:out></td>
 		          	<td><c:out value="${ facture.prix }"></c:out> euros</td>
+		          	<td><a href="detailFacture?id=${ facture.id }">Détail de la facture</a></td>
 		        </tr>
 		 	</c:forEach>
         </tbody>

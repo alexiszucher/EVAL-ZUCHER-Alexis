@@ -52,12 +52,16 @@ public class FactureDAOImpl implements FactureDAO {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
-		
 	}
 
 	public List<Facture> get() {
 		return em.createQuery("Select f from Facture f", Facture.class).getResultList();
+	}
+
+	public Facture get(Long id) {
+		return em.createQuery("select f from Facture f where f.id = :id", Facture.class)
+				.setParameter("id", id)
+				.getSingleResult();
 	}
 
 }

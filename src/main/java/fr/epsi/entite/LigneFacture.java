@@ -9,11 +9,6 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
-/*
- * Cette classe servira lorsque nous voudrons afficher les détails des factures ou ajouter une facture.
- * Dans cette évaluation, cette classe ne sert pas.
-*/
-
 @Entity
 public class LigneFacture {
 	
@@ -27,6 +22,10 @@ public class LigneFacture {
 	@ManyToOne
 	@JoinColumn(name = "facture_id")
 	private Facture facture;
+	
+	@ManyToOne
+	@JoinColumn(name = "article_id")
+	private Article article;
 	
 	public void setId(Long id) {
 		this.id = id;
@@ -54,6 +53,13 @@ public class LigneFacture {
 	}
 	public Facture getFacture() {
 		return facture;
+	}
+	
+	public void setArticle(Article article) {
+		this.article = article;
+	}
+	public Article getArticle() {
+		return article;
 	}
 
 }
