@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <display-name>EVAL-ZUCHER-Alexis</display-name>
+
+	<servlet>
+	  <servlet-name>AccueilServlet</servlet-name>
+	  <servlet-class>fr.epsi.controller.AccueilServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	   <servlet-name>AccueilServlet</servlet-name>
+	   <url-pattern>/accueil</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	  <servlet-name>ClientsServlet</servlet-name>
+	  <servlet-class>fr.epsi.controller.ClientsServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	   <servlet-name>ClientsServlet</servlet-name>
+	   <url-pattern>/clients</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	  <servlet-name>ArticlesServlet</servlet-name>
+	  <servlet-class>fr.epsi.controller.ArticlesServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	   <servlet-name>ArticlesServlet</servlet-name>
+	   <url-pattern>/articles</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	  <servlet-name>FacturesServlet</servlet-name>
+	  <servlet-class>fr.epsi.controller.FacturesServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	   <servlet-name>FacturesServlet</servlet-name>
+	   <url-pattern>/factures</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	  <servlet-name>AjouterClientServlet</servlet-name>
+	  <servlet-class>fr.epsi.controller.AjouterClientServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	   <servlet-name>AjouterClientServlet</servlet-name>
+	   <url-pattern>/ajouter/client</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	  <servlet-name>AjouterArticleServlet</servlet-name>
+	  <servlet-class>fr.epsi.controller.AjouterArticleServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	   <servlet-name>AjouterArticleServlet</servlet-name>
+	   <url-pattern>/ajouter/article</url-pattern>
+	</servlet-mapping>
+	
+</web-app>
